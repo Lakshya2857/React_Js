@@ -1,0 +1,23 @@
+import { useState } from 'react'
+
+function App() {
+  const [color, setColor] = useState("olive")
+
+  return (
+<div className="w-full h-screen duration-3f000"
+     style={{ backgroundColor: color }}>
+
+  <div className="fixed bottom-12 inset-x-0 flex justify-center">
+    <div className="flex gap-3 shadow-lg bg-white px-3 py-2 rounded-xl">
+      <button onClick={()=>setColor("red")} className='outline-none px-4 py-1 rounded-full cursor-pointer'style={{backgroundColor:"red"}}>Red</button>
+      <button onClick={()=>setColor("blue")} className='outline-none px-4 py-1 rounded-full cursor-pointer'style={{backgroundColor:"blue"}}>Blue</button>
+      <button onClick={()=>setColor("lavender")} className='outline-none px-4 py-1 rounded-full cursor-pointer'style={{backgroundColor:"lavender"}}>Lavender</button>
+      <button onClick={()=>setColor("grey")} className='outline-none px-4 py-1 rounded-full cursor-pointer'style={{backgroundColor:"Grey"}}>Grey</button>
+    </div>
+  </div>
+
+</div>
+  )
+}
+
+export default App
