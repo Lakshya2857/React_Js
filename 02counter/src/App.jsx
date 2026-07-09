@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import './App.css'
 
 function App() {
 let[counter,setcounter]=useState(15)
