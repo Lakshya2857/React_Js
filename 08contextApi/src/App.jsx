@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Login from './Components/Login'
+import Profile from './Components/Profile'
 import UserContextProvider from './Context/UserContextProvider'
 
 
@@ -11,7 +13,8 @@ function App() {
   return (
     <>
   <UserContextProvider>
-    <h1>Chai and Code </h1>
+    <Login/>
+    <Profile/>
   </UserContextProvider>
     </>
   )
